@@ -132,3 +132,19 @@ Classification || category and class accuracy
 
 The more we do cross validation the more it will take the machine time to calculate.
 
+Normal Distribution;
+
+	Bell Curve: u +- sigma --> ~68%
+		    u +- 2sigma--> ~97%
+		    u +- 3sigma--> ~99%
+
+
+K -Nearest Neighbours-->
+
+Knn can be used for both the classification and regression.
+
+use k-closest points for knn classification.
+
+where not to use KNN -->{ Big data, Real time prediction }
+
+
