@@ -1,0 +1,115 @@
+Regression Problem:  When there is a requirement to predict numeric values in nature (real, continuous, discreet, etc.), there is a need to quantify the impact of numerous variables on a numerical entity (also known as the dependent or Y variable).
+
+Classification Problem: This business problem is somewhat similar to regression problems. Here, there is a requirement to quantify the impact of variables (known as independent or X variables) on a dependent variable. However, they are different as here, and the Y variable is categorical. Thus, a model is to be developed based on the X variables and predicts observations into predefined classes.
+
+Forecasting Problem: When values are required to be predicted over a period of time and the time acts as a predictor, then these problems are known as forecasting problems.
+
+Segmentation Problem: There are situations where a bulk of data needs to be categorized. However, there are no pre-existing classes that can be used to supervise the model. Here the underlying patterns are to be detected and divided the observation into different categories. These categories are then defined by understanding the characteristics of the observations found in each particular class.
+
+While all the above-mentioned business problems can be found in the industry, the most commonly found business problem is classification. Often businesses require their output to be categorized into predefined classes, and this is where classification models come in handy. 
+
+ Types of Classification
+
+Depending upon the dependent variable’s nature, different machine learning classification techniques can be understood. Of the various classification techniques, the most common ones are the following
+
+Binary Classification: The most basic and commonly used form of classification is a binary classification. Here, the dependent variable comprises two exclusive categories that are denoted through 1 and 0, hence the term Binary Classification. Often 1 means True and 0 means False. For example, if the business problem is whether the bank member was able to repay the loan and we have a feature/variable that says “Loan Defaulter,” then the response will either be 1 (which would mean True, i.e., Loan defaulter) or 0 (which would mean False, i.e., Non-Loan Defaulter). This classification has often formed the basis of various classification algorithms and is the kind of classification technique that is foremost understood.
+Binomial Classification: This classification type is technically like Binary Classification only as the Y variable comprises two categories. However, these categories may not be in the form of True and False. For example, if we have a dataset for multiple features that denote pixel density, we have a Y variable with two categories – “Car” or “Bike,” This type of classification is known as Binomial Classification. From a practical point of view, especially as far as Machine Learning is concerned, there is no difference as these two categories can also be encoded and denoted as 0 and 1, making this type look like a Binary Classification only.
+Multi-class Classification: An advanced form of classification, multi-class classification, is when the Y variable is comprised of more than two classes/categories.  Here each observation belongs to a class, and a classification algorithm has to establish the relationship between the input variables and them. Therefore, during prediction, each observation is assigned to a single exclusive class. For example, a business problem where there is a need to categorize whether an observation is “Safe,” “At-Risk,” or “Unsafe” then would be classed as a multi-class classification problem. Note – Each observation can belong to only one class, and multiple classes can’t be assigned to observation. Thus here, observation will either be “Safe” or “At-Risk” or “Unsafe” and can’t be multiple things.
+Multi-label Classification: This form of classification is similar to Multi-class classification. Here, the dependent variable has more than 2 categories; however, it is different from multi-class classification because here, an observation can be mapped to more than one category. Therefore, the classification algorithm here has to understand which classes an observation can be related to and understand the patterns accordingly. A common use-case of these types of classification problem is found in text mining related classification where an observation (e.g., text from a newspaper article) can have multiple categories in its corresponding dependent variable (such as “Politics,” “Name of Politicians Involved,” “Important Geographical Location” etc..).Thus, a classification can be of multiple types, and depending upon the business problem. We have to identify the kind of classification technique and the algorithms involved in such techniques.
+
+ Logistic Regression Classifier
+
+Logistic Regression is among the oldest ways of performing Classification. This algorithm belongs to the family of Generalized Family of models where a logit function is used to transform the Y variable. A linear model can be made to fit to come up with probabilities. In terms of the discipline, Logistic Regression is a classical statistical model and uses the traditional concepts of statistics to come up with probabilities. 
+
+
+
+ Classification Use Cases
+Email Classification: 
+Among the most traditional and early use of classification, emails were often required to be classified as spam or not spam (i.e., being worthy of being in the inbox). This is done by developing a classifier model that goes through the content of the data and identifies if the email is spam or not.
+
+Image Classification: 
+1. Extensive use of image classification is in the automobile industry, especially those trying to create self-driving cars.
+2. Security Agencies are increasingly using image classification to identify culprits, while home security systems are heavily relying on Image classification to raise alarms in case of an intrusion.
+3. Image classification’s lifesaving application has been in healthcare, where image classification has enabled early detection of diseases and has helped develop robots that use computer vision to perform complicated surgeries.
+
+Anomaly / Fraud Detection:
+A use case of classification is often used in Banking, Financial Services, and Insurance (BFSI domains). Many transactions in these domains and finding fraud transactions of utmost importance, and sophisticated classification algorithms are tried to create and implemented to work on a real-time basis. 
+
+
+ Important Terms :
+Artificial Intelligence
+A non-human program or model that can solve sophisticated tasks. For example, a program or model that translates text or a program or model that identifies diseases from radiologic images both exhibit artificial intelligence.
+Binary Classification
+A type of classification task that outputs one of two mutually exclusive classes. For example, a machine learning model that evaluates email messages and outputs either "spam" or "not spam" is a binary classifier.
+Categorical Data
+Features having a discrete set of possible values. For example, consider a categorical feature named house type, which has a discrete set of three possible values:
+row house
+multi story
+farm house
+By representing house style as categorical data, the model can learn the separate impacts of on house price.
+Categorical features are sometimes called discrete features.
+Class
+One of a set of enumerated target values for a label. For example, in a binary classification model that detects spam, the two classes are spam and not spam. In a multi-class classification model that identifies dog breeds, the classes would be poodle, beagle, pug, and so on.
+Classification Model
+A type of model that distinguishes among two or more discrete classes. For example, a natural language processing classification model could determine whether an input sentence was in French, Spanish, or Italian.
+Clustering
+Grouping related examples, particularly during unsupervised learning. Once all the examples are grouped, a human can optionally supply meaning to each cluster.
+Many clustering algorithms exist. For example, the k-means algorithm clusters examples based on their proximity to a centroid.
+Continuous Feature
+A floating-point feature with an infinite range of possible values.
+Data Analysis
+Obtaining an understanding of data by considering samples, measurement, and visualization. Data analysis can be particularly useful when a dataset is first received, before one builds the first model. It is also crucial in understanding experiments and debugging problems with the system.
+Deep Model
+A type of neural network containing multiple hidden layers.
+Dimension Reduction
+Decreasing the number of dimensions used to represent a particular feature in a feature vector, typically by converting to an embedding.
+Discrete Feature
+A feature with a finite set of possible values. For example, a feature whose values may only be animal, vegetable, or mineral is a discrete (or categorical) feature.
+Ensemble
+A collection of models trained independently whose predictions are averaged or aggregated. In many cases, an ensemble produces better predictions than a single model. For example, a random forest is an ensemble built from multiple decision trees. Note that not all decision forests are ensembles.
+Feature
+An input variable used in making predictions.
+Label
+In supervised learning, the "answer" or "result" portion of an example. Each example in a labeled dataset consists of one or more features and a label. For instance, in a housing dataset, the features might include the number of bedrooms, the number of bathrooms, and the age of the house, while the label might be the house's price. In a spam detection dataset, the features might include the subject line, the sender, and the email message itself, while the label would probably be either "spam" or "not spam."
+Labeled Example
+An example that contains features and a label. In supervised training, models learn from labeled examples.
+Machine Learning
+A program or system that builds (trains) a predictive model from input data. The system uses the learned model to make useful predictions from new (never-before-seen) data drawn from the same distribution as the one used to train the model. Machine learning also refers to the field of study concerned with these programs or systems.
+Multi-class Classificatio
+Classification problems that distinguish among more than two classes. For example, there are approximately 128 species of maple trees, so a model that categorized maple tree species would be multi-class. Conversely, a model that divided emails into only two categories (spam and not spam) would be a binary classification model.
+Numerical Data
+Features represented as integers or real-valued numbers. For example, in a real estate model, you would probably represent the size of a house (in square feet or square meters) as numerical data. Representing a feature as numerical data indicates that the feature's values have a mathematical relationship to each other and possibly to the label. For example, representing the size of a house as numerical data indicates that a 200 square-meter house is twice as large as a 100 square-meter house. Furthermore, the number of square meters in a house probably has some mathematical relationship to the price of the house.
+Not all integer data should be represented as numerical data. For example, postal codes in some parts of the world are integers; however, integer postal codes should not be represented as numerical data in models. That's because a postal code of 20000 is not twice (or half) as potent as a postal code of 10000. Furthermore, although different postal codes do correlate to different real estate values, we can't assume that real estate values at postal code 20000 are twice as valuable as real estate values at postal code 10000. Postal codes should be represented as categorical data instead.
+
+Numerical features are sometimes called continuous features.
+Parameter
+A variable of a model that the machine learning system trains on its own. For example, weights are parameters whose values the machine learning system gradually learns through successive training iterations. Contrast with hyperparameter.
+Recommendation System
+A system that selects for each user a relatively small set of desirable items from a large corpus. For example, a video recommendation system might recommend two videos from a corpus of 100,000 videos, selecting Casablanca and The Philadelphia Story for one user, and Wonder Woman and Black Panther for another. A video recommendation system might base its recommendations on factors such as:
+Movies that similar users have rated or watched.
+Genre, directors, actors, target demographic...
+Regression Model
+A type of model that outputs continuous (typically, floating-point) values. Compare with classification models, which output discrete values, such as "day lily" or "tiger lily."
+Reinforcement Learning (RL)
+A family of algorithms that learn an optimal policy, whose goal is to maximize return when interacting with an environment. For example, the ultimate reward of most games is victory. Reinforcement learning systems can become expert at playing complex games by evaluating sequences of previous game moves that ultimately led to wins and sequences that ultimately led to losses.
+Self-Supervised Learning
+A family of techniques for converting an unsupervised machine learning problem into a supervised machine learning problem by creating surrogate labels from unlabeled examples.
+Some Transformer-based models such as BERT use self-supervised learning.
+Self-supervised training is a semi-supervised learning approach.
+Semi-Supervised Learning
+Training a model on data where some of the training examples have labels but others don't. One technique for semi-supervised learning is to infer labels for the unlabeled examples, and then to train on the inferred labels to create a new model. Semi-supervised learning can be useful if labels are expensive to obtain but unlabeled examples are plentiful.
+Self-training is one technique for semi-supervised learning.
+Sentiment Analysis
+Using statistical or machine learning algorithms to determine a group's overall attitude—positive or negative—toward a service, product, organization, or topic. For example, using natural language understanding, an algorithm could perform sentiment analysis on the textual feedback from a university course to determine the degree to which students generally liked or disliked the course.
+Supervised Machine Learning
+Training a model from input data and its corresponding labels. Supervised machine learning is analogous to a student learning a subject by studying a set of questions and their corresponding answers. After mastering the mapping between questions and answers, the student can then provide answers to new (never-before-seen) questions on the same topic. Compare with unsupervised machine learning.
+Time Series Analysis
+A subfield of machine learning and statistics that analyzes temporal data. Many types of machine learning problems require time series analysis, including classification, clustering, forecasting, and anomaly detection. For example, you could use time series analysis to forecast the future sales of winter coats by month based on historical sales data.
+Unlabeled Example
+An example that contains features but no label. Unlabeled examples are the input to inference. In semi-supervised and unsupervised learning, unlabeled examples are used during training.
+Unsupervised Machine Learning
+Training a model to find patterns in a dataset, typically an unlabeled dataset.
+The most common use of unsupervised machine learning is to cluster data into groups of similar examples. For example, an unsupervised machine learning algorithm can cluster songs together based on various properties of the music. The resulting clusters can become an input to other machine learning algorithms (for example, to a music recommendation service). Clustering can be helpful in domains where true labels are hard to obtain. For example, in domains such as anti-abuse and fraud, clusters can help humans better understand the data.
+Another example of unsupervised machine learning is principal component analysis (PCA). For example, applying PCA on a dataset containing the contents of millions of shopping carts might reveal that shopping carts containing lemons frequently also contain antacids.
+Weight
+A coefficient for a feature in a linear model, or an edge in a deep network. The goal of training a linear model is to determine the ideal weight for each feature. If a weight is 0, then its corresponding feature does not contribute to the model.
