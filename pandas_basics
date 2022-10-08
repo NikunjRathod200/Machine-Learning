@@ -35,3 +35,42 @@ Data Frame
 Pandas DataFrame is two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). A Data frame is a two-dimensional data structure, i.e., data is aligned in a tabular fashion in rows and columns.
 Data Analysis
 Obtaining an understanding of data by considering samples, measurement, and visualization. Data analysis can be particularly useful when a dataset is first received, before one builds the first model. It is also crucial in understanding experiments and debugging problems with the system.
+
+
+Pandas Series
+Pandas Series is a one-dimensional labeled array capable of holding any data type. Pandas Series is built on top of NumPy array objects.
+How Pandas Series is different from 1-D Numpy Array
+1. Pandas Series can hold a variety of data types whereas Numpy supports only numerical data type
+2. Pandas Series supports index labels.
+Pandas DataFrame
+Pandas Dataframe is a two dimensional labeled data structure. It consists of rows and columns.
+Each column in Pandas DataFrame is a Pandas Series.
+df.head()
+Returns first 5 rows of dataframe (by default).
+df. tail()
+Returns the last 5 rows of the dataframe(by default).
+df.info()
+It prints the concise summary of the dataframe. This method prints information of the dataframe like column names, its datatypes, nonnull values, and memory usage
+df.dtypes()
+Returns a series with the datatypes of each column in the dataframe.
+df.shape
+Return the number of rows and columns of the dataframe.
+df. values
+Return the NumPy representation of the DataFrame.
+df.to_numpy() → This also returns the NumPy representation of the dataframe.
+df.columns
+Return the column labels of the dataframe
+df. describe()
+Generates descriptive statistics. It describes the summary of all numerical columns in the dataframe.
+df. describe(include=” all”)
+It describes the summary of all columns in the dataframe.
+df.col_name.unique()
+Returns the unique values in the column as a NumPy array.
+df.col_name.value_counts()
+Return a Series containing counts of unique values.
+df.col_name.astype()
+Converting datatype of a particular column.
+df.sort_values(by=”Col_1”)
+It will sort the dataframe by column ”Col_1”
+train_test_split
+The train_test_split function of the sklearn. model_selection package in Python splits arrays or matrices into random subsets for train and test data, respectively.
