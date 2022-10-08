@@ -1,0 +1,37 @@
+Pandas is an open-source python package built on top of Numpy developed by Wes McKinney. It is used as one of the most important data cleaning and analysis tool. It provides fast, flexible, and expressive data structures.
+Pandas is derived from the term “Panel-data-s” an econometrics term for data sets include observations over multiple time periods for the same individuals.
+
+ Types of Pandas Data Structures
+Pandas deals with three types of data structures :
+
+Series : Series is a one-dimensional array-like structure with homogeneous data. The size of the series is immutable(cannot be changed) but its values are mutable.
+DataFrame : DataFrame is a two-dimensional array-like structure with heterogeneous data. Data is aligned in a tabular manner(Rows &Columns form). The size and values of DataFrame are mutable.
+Panel Data : The panel is a three-dimensional data structure with heterogeneous data. It is hard to represent the panel in graphical representation. But it can be illustrated as a container of DataFrame. The size and values of a Panel are mutable.
+
+ How to read and write files?
+
+pandas supports the integration with many file formats or data sources out of the box (csv, excel, sql, json, parquet,…). Importing data from each of these data sources is provided by function with the prefix read_*. Similarly, the to_* methods are used to store data.
+
+
+ Pandas Common Functions and Methods
+Read Comma Separated Value (CSV) file : df.read_csv('file path')
+Read Excel file : df.read_csv('file path')
+View top rows : df.head()
+View bottom rows : df.tail(
+Information : df.info()
+Summary statistics : df.describe()
+Name of columns : df.columns
+Shape : df.shape
+ Important Terms :
+Python
+Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
+Google Colab
+Colaboratory, or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser, and is especially well suited to machine learning, data analysis and education.
+Pandas
+Pandas is a Python library used for working with data sets.
+It has functions for analyzing, cleaning, exploring, and manipulating data.
+The name "Pandas" has a reference to both "Panel Data", and "Python Data Analysis" and was created by Wes McKinney in 2008.
+Data Frame
+Pandas DataFrame is two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). A Data frame is a two-dimensional data structure, i.e., data is aligned in a tabular fashion in rows and columns.
+Data Analysis
+Obtaining an understanding of data by considering samples, measurement, and visualization. Data analysis can be particularly useful when a dataset is first received, before one builds the first model. It is also crucial in understanding experiments and debugging problems with the system.
